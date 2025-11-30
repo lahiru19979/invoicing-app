@@ -15,6 +15,7 @@ import InvoiceDetailScreen from '../screens/InvoiceDetailScreen';
 import CreateInvoiceScreen from '../screens/CreateInvoiceScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import BarcodeScanScreen from '../screens/BarcodeScanScreen';
+import EditInvoiceScreen from '../screens/EditInvoiceScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -112,6 +113,11 @@ const AppNavigator = () => {
               name="CreateInvoice"
               component={CreateInvoiceScreen}
               options={{title: 'Create Invoice'}}
+            />
+              <Stack.Screen
+              name="EditInvoice"
+              component={EditInvoiceScreen}
+              options={{title: 'Edit Invoice'}}
             />
             <Stack.Screen
               name="BarcodeScan"

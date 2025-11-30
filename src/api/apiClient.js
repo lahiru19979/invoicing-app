@@ -57,7 +57,7 @@ export const invoiceAPI = {
 
   create: data => apiClient.post('/save_inv', data),
 
-  update: (id, data) => apiClient.put(`/invoices/${id}`, data),
+  update: (id, data) => apiClient.put(`/invoices_update/${id}`, data),
 
   delete: id => apiClient.delete(`/invoices/${id}`),
 
@@ -65,6 +65,7 @@ export const invoiceAPI = {
 
   getMaxInvoiceNo: () => apiClient.get('/max_inv_no'),
   getShareablePdfUrl: id => apiClient.get(`/generate_share_invoice/${id}`),
+  getInvoiceData: id => apiClient.get(`/get_invoice_data/${id}`),
 };
 
 export const productAPI = {
@@ -75,14 +76,10 @@ export const productAPI = {
 
 export const customerAPI = {
   // Get all customers
-  getAll: () => 
-    apiClient.get('/cusname'),
-  
+  getAll: () => apiClient.get('/cusname'),
+
   // Search customers
-  search: (query) => 
-    apiClient.get(`/cusname?search=${query}`),
+  search: query => apiClient.get(`/cusname?search=${query}`),
 };
-
-
 
 export default apiClient;

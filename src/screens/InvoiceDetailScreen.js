@@ -34,7 +34,7 @@ const InvoiceDetailScreen = ({route, navigation}) => {
       setInvoiceDetails(data);
       setItems(data.items || data.invoice_items || []);
     } catch (error) {
-      console.error('Fetch invoice details error:', error);
+      // console.error('Fetch invoice details error:', error);
       // Use the passed invoice data if API fails
     } finally {
       setLoading(false);
@@ -156,7 +156,7 @@ const InvoiceDetailScreen = ({route, navigation}) => {
       {/* Amount Card */}
       <View style={styles.amountCard}>
         <Text style={styles.amountLabel}>Total Amount</Text>
-        <Text style={styles.amountValue}>Rs. {invoiceDetails.grand_total}</Text>
+        <Text style={styles.amountValue}>Rs. {invoiceDetails.grand_total}</Text> 
       </View>
 
       {/* Customer Section */}

@@ -22,7 +22,7 @@ const HomeScreen = ({navigation}) => {
       const response = await invoiceAPI.getDashboard();
       setDashboard(response.data);
     } catch (error) {
-      console.error('Dashboard fetch error:', error);
+      // console.error('Dashboard fetch error:', error);
     } finally {
       setLoading(false);
       setRefreshing(false);

@@ -3,15 +3,15 @@ export const INVOICE_STATUS = {
   '1': { label: 'Pending', color: '#FF9800' },
   '2': { label: 'Processing', color: '#2196F3' },
   '3': { label: 'Shipped', color: '#9C27B0' },
-  '4': { label: 'Delivered', color: '#4CAF50' },
-  '5': { label: 'Cancelled', color: '#F44336' },
+  '5': { label: 'Delivered', color: '#4CAF50' },
+  '14': { label: 'With Courier', color: '#FF9800' },
   '6': { label: 'Returned', color: '#795548' },
   '7': { label: 'Refunded', color: '#607D8B' },
   '8': { label: 'On Hold', color: '#FF5722' },
   '9': { label: 'Completed', color: '#4CAF50' },
   '10': { label: 'Failed', color: '#F44336' },
-  '11': { label: 'Paid', color: '#4CAF50' },
-  '12': { label: 'Unpaid', color: '#FF9800' },
+  '11': { label: 'Payment Received', color: '#4CAF50' },
+  '12': { label: 'New Enquiry', color: '#FF9800' },
   // Add more status codes as per your system
 };
 

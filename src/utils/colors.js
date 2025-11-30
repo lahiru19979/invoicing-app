@@ -35,3 +35,13 @@ export const getColorCode = (colorId) => {
   const color = getColorByID(colorId);
   return color ? color.code : '#FFFFFF';
 };
+
+export const getColorIDByName = (name) => {
+  // 1. Safety Check
+  if (!name || typeof name !== 'string') {
+    return 'white'; 
+  }
+  const searchName = name.trim().toLowerCase();
+  const foundColor = PRODUCT_COLORS.find(c => c.name.toLowerCase() === searchName);
+  return foundColor ? foundColor.id : 'white';
+};
